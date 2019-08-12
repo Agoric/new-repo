@@ -34,7 +34,6 @@ Before submitting a pull request, please:
 * `npm run build`
 * `npm publish`
 * `npm version prerelease --preid=dev`
-* `git commit -am 'development version'`
 * `git push`
 
 ## Versioning
@@ -45,6 +44,5 @@ from a git checkout, so bug reports to not make it look like they were using
 the previous tagged release.
 
 To achieve this, after doing a release, we run `npm version prerelease
---preid=dev`, then `git commit -am 'development version'`, to modify the
-`package.json` and `package-lock.json` with the new in-between version
-string.
+--preid=dev` to modify the `package.json` and `package-lock.json` with
+the new in-between version string.
